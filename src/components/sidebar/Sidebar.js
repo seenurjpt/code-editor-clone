@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./sidebar.css";
+import closeBtn from '../../assets/close_tab.svg'
 
-const Sidebar = () => {
+const Sidebar = ({handleSidebar}) => {
   const files = [
     { id: 1, name: "index.html" },
     { id: 2, name: "App.js" },
@@ -14,7 +15,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar_container">
       <div>
-        <h5 className="mb-2">Files</h5>
+        <h5 className="mb-2">Files <img src={closeBtn} onClick={()=>{handleSidebar()}} alt="close"/></h5>
         {files.map((file, i) => {
           return (
             <p

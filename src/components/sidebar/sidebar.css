@@ -2,6 +2,7 @@
   border-right: 1px #dde6ed solid;
   height: 97vh;
   padding: 5px;
+  animation: fadeIn 0.5s ease forwards;
 }
 .file {
   border: 1px solid rgba(255, 255, 255, 0);
@@ -23,4 +24,14 @@
 .active_file {
   border: 1px solid #03c988;
   color: #03c988;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
