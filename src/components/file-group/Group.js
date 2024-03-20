@@ -102,7 +102,7 @@ const Group = ({ addTabGroup, tabId, activeGroup, groupIndex,groupCount }) => {
               src={splitHor}
               alt="splt_hor"
               onClick={() => {
-                addTabGroup(activeTab, "horizontal", groupIndex);
+                addTabGroup(activeTab, "vertical", groupIndex);
               }}
             />
             {"    "}
@@ -110,7 +110,7 @@ const Group = ({ addTabGroup, tabId, activeGroup, groupIndex,groupCount }) => {
               src={splitVer}
               alt="splt_ver"
               onClick={() => {
-                addTabGroup(activeTab, "vertical", groupIndex);
+                addTabGroup(activeTab, "horizontal", groupIndex);
               }}
             />
           </div>
